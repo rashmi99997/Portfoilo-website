@@ -3,6 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Full stack developer specializing in React, Node.js, and modern web technologies. Available for freelance projects and collaborations.">
+    <meta name="keywords" content="Rashmi, Portfolio, Web Developer, React, Node.js, JavaScript, HTML, CSS, Freelance Developer">
+    <meta name="author" content="Rashmi">
+    <title>My Portfolio | Rashmi</title>
+    <!-- Open Graph Meta Tags for Social Media Sharing -->
+    <meta property="og:title" content="My Portfolio | Rashmi">
+    <meta property="og:description" content="Full stack developer specializing in React, Node.js, and modern web technologies. Available for freelance projects and collaborations.">
+    <meta property="og:image" content="images/profile.jpg">
+    <meta property="og:url" content="[Your Portfolio URL]">
+    <meta property="og:type" content="website">
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="My Portfolio | Rashmi">
+    <meta name="twitter:description" content="Full stack developer specializing in React, Node.js, and modern web technologies. Available for freelance projects and collaborations.">
+    <meta name="twitter:image" content="images/profile.jpg">
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="images/images.png" alt="Favicon">
+ 
     <title>My Portfolio | Rashmi KP</title>
 </head>
 <body>
@@ -25,7 +44,10 @@
     <!-- ABOUT SECTION -->
     <section id="about">
         <h2>About Me</h2>
-        <img src="profile_pic.jpeg" alt="Profile photo of Rashmi KP" width="200">
+        <figure class="profile-figure">
+                    <img src="images/profile_pic.jpeg" alt="Rashmi profile photo" width="300">
+                    <figcaption>Rashmi KP — Web Developer</figcaption>
+                </figure>
         <p>I love building things on the web. Currently learning HTML, CSS,
            JavaScript, and React.</p>
     </section>
@@ -74,15 +96,21 @@
         </table>
     </section>
  
-    <!-- PROJECTS SECTION -->
+   <!-- PROJECTS SECTION -->
     <section id="projects">
         <h2>My Projects</h2>
-        <article class="project-card">
+        <div class="project-card">
             <h3>Project 1</h3>
             <p>Description of project 1</p>
             <a href="#">View Project</a>
-        </article>
+        </div>
+        <!--Embed YouTube Video (iframe)-->
+            <!--Embed YouTube Video (iframe)-->
+            <iframe width="300" height="169" src="https://www.youtube.com/embed/tqjJrXd27m4" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+
+ 
     </section>
+
 
     <!-- CONTACT SECTION -->
     <section id="contact">
@@ -136,10 +164,13 @@
             <textarea id="message" name="message" rows="5"
                       placeholder="Tell me about your project..." required></textarea>
 
-            <button type="submit">Send Message 🚀</button>
+            
+            <button type="submit" aria-label="Submit button">Send Message 🚀</button>
+            <button type="reset">Clear Form</button>
         </form>
     </section>
- 
+    
+    
     <!-- FOOTER -->
     <footer>
         <p>&copy; 2026 Rashmi KP. All rights reserved.</p>
